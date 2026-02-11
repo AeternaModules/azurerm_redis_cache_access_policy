@@ -1,6 +1,6 @@
-variable "redis_cache_access_policys" {
+variable "redis_cache_access_policies" {
   description = <<EOT
-Map of redis_cache_access_policys, attributes below
+Map of redis_cache_access_policies, attributes below
 Required:
     - name
     - permissions
