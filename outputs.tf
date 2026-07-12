@@ -1,3 +1,7 @@
+output "redis_cache_access_policies_id" {
+  description = "Map of id values across all redis_cache_access_policies, keyed the same as var.redis_cache_access_policies"
+  value       = { for k, v in azurerm_redis_cache_access_policy.redis_cache_access_policies : k => v.id }
+}
 output "redis_cache_access_policies_name" {
   description = "Map of name values across all redis_cache_access_policies, keyed the same as var.redis_cache_access_policies"
   value       = { for k, v in azurerm_redis_cache_access_policy.redis_cache_access_policies : k => v.name }
